@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const DataFetcher_1 = require("./DataFetcher");
+const Student_1 = require("./Student");
+const Teacher_1 = require("./Teacher");
+const Data_1 = require("./Data");
+const data = new Data_1.Data();
+const teacher = new Teacher_1.Teacher();
+const student = new Student_1.Student();
+const fetcher = new DataFetcher_1.Fetcher(data, [teacher, student]);
+data.showData("SWE 4501", "Observer Pattern", "Nazmul Haque sir", new Date(Date.now() - 86400000));
+fetcher.fetchData();
+student.displayData();
+teacher.displayData();
