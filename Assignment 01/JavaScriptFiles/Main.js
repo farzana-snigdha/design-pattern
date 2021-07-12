@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const Data_1 = require("./Data");
+const Student_1 = require("./Student");
+const Teacher_1 = require("./Teacher");
+const data = new Data_1.Data();
+const student1 = new Student_1.Student();
+const teacher1 = new Teacher_1.Teacher();
+data.registerObserver(student1);
+data.measuredChanged("SWE-4501", "Observer Pattern", "ABC", new Date());
