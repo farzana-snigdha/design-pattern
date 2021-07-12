@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Data = void 0;
-class Data {
+exports.ClassData = void 0;
+class ClassData {
     constructor() {
         this.observers = [];
     }
@@ -28,4 +28,4 @@ class Data {
         this.notifyObserver();
     }
 }
-exports.Data = Data;
+exports.ClassData = ClassData;

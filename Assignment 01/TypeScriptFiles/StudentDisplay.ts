@@ -1,16 +1,16 @@
 import { DataFetcher } from "./DataFetcher";
 
-export class Teacher extends DataFetcher {
+export class StudentDisplay extends DataFetcher {
   displayData(): void {
     console.log(
-      "Techer view:\nCourse No: " +
+      "Student view:\nCourse No: " +
         this.course +
         "\nTopic name: " +
         this.topic +
         "\nTeacher: " +
         this.teacher +
         "\nTime:" +
-        this.time.toLocaleString("de-DE", { hour12: false })
+        this.time.toLocaleString("en-us", { hour12: true })
     );
   }
 }

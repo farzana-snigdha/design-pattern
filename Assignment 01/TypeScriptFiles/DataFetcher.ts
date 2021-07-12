@@ -1,7 +1,6 @@
-import { DisplayData } from "./DisplayData";
 import { Observer } from "./Observer";
 
-export abstract class DataFetcher implements DisplayData,Observer{
+export abstract class DataFetcher implements Observer{
     course!:String
     topic!:String
     teacher!:String
